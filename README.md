@@ -4,7 +4,8 @@
 
 
 画面遷移図
-<img width="722" height="600" alt="スクリーンショット 2025-09-05 16 35 21" src="https://github.com/user-attachments/assets/02ee3916-ae62-4771-9449-bcf64a65751f" />
+<img width="982" height="607" alt="スクリーンショット 2025-09-05 17 45 16" src="https://github.com/user-attachments/assets/66890f4f-4741-4a11-972e-6c5d89450a2c" />
+
 
 
 機能表
