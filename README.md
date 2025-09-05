@@ -1,6 +1,6 @@
 テーブル定義
 (inquiriesテーブル、ログイン機能がないため１のテーブルで管理)
-<img width="974" height="520" alt="スクリーンショット 2025-09-05 18 53 10" src="https://github.com/user-attachments/assets/ed5a8230-b9cf-461e-abfd-7060d64bd5a5" />
+<img width="988" height="517" alt="スクリーンショット 2025-09-05 18 54 25" src="https://github.com/user-attachments/assets/f49ce5ad-3c98-447b-8545-20c13e968307" />
 
 
 
