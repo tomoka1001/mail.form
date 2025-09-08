@@ -1,10 +1,11 @@
 <h1>テーブル定義</h1>
 <p>(inquiriesテーブル、ログイン機能がないため１つのテーブルで管理)</p>
 <ul>
-  <li>性別だけ１→男性、２→女性で保存する。</li>
+<!--   <li>性別だけ１→男性、２→女性で保存する。</li> -->
   <li>写真だけNULL可、それ以外はNOT NULL</li>
 </ul>
-<img width="976" height="484" alt="スクリーンショット 2025-09-08 12 41 40" src="https://github.com/user-attachments/assets/466cd6e9-819b-4f8e-b7ec-8da5aa7eda2d" />
+<img width="976" height="451" alt="スクリーンショット 2025-09-08 14 37 57" src="https://github.com/user-attachments/assets/a46d05d9-f475-4f69-88f5-c18e92404ffe" />
+
 
 
 
