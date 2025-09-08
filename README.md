@@ -1,6 +1,9 @@
 テーブル定義
 (inquiriesテーブル、ログイン機能がないため１つのテーブルで管理)
-<img width="635" height="310" alt="スクリーンショット 2025-09-05 17 21 46" src="https://github.com/user-attachments/assets/fe2fc446-b8dc-48df-8d14-f85be80b4617" />
+・性別だけ１→男性、２→女性で保存する。
+・写真だけNULL可、それ以外はNOT NULL
+<img width="976" height="484" alt="スクリーンショット 2025-09-08 12 41 40" src="https://github.com/user-attachments/assets/466cd6e9-819b-4f8e-b7ec-8da5aa7eda2d" />
+
 
 
 画面遷移図
