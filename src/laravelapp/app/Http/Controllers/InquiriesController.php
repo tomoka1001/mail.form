@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\CreateInquiry;
 use Illuminate\Http\Request;
+use App\inquiry;
 
 class InquiriesController extends Controller
 {
@@ -13,20 +15,29 @@ class InquiriesController extends Controller
     }
 
     // 確認画面
-    public function comfilm()
+    public function comfilm(CreateInquiry $request)
     {
         return view('inquiries/comfilm');
     }
 
-    // DBに保存
-    public function create()
+    // 完了画面表示(new 箱を作る)
+        public function showThanksForm(Request $request)
     {
+        // フォルダモデルのインスタンス(箱）を作成する
+        $inquiry = new inquiry();
 
-    }
+        // ここで$requestを読んでいる
+        $inquiry->name = $request->name;
+        $inquiry->email = $request->email;
+        $inquiry->sex = $request->sex;
+        $inquiry->category = $request->category;
+        $inquiry->area = $request->area;
+        $inquiry->message = $request->message;
+        $inquiry->image = $request->image;
 
-    // 完了画面表示
-        public function showThanksForm()
-    {
-        return view('inquiries/thanks');
+        // インスタンスの状態をデータベースに書き込む
+        $inquiry->save();
+
+        return redirect()->route('inquiries.top');
     }
 }

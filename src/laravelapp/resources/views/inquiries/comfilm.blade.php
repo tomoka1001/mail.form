@@ -1,15 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>確認画面</title>
-</head>
-<body>
+@extends('layout')
+
+@section('styles')
+@endsection
+@section('content')
     <div>
-        <form action="" method="">
-            <table>
+        <form action="{{ route('inquiries.comfilm')}}" method="POST">
+        @csrf
+            <table border="1">
                 <tr>
                     <th>名前</th>
                     <input type="hidden" name="onamae" value="">
@@ -53,5 +50,4 @@
             </table>
         </form>
     </div>
-</body>
-</html>
+@endsection
