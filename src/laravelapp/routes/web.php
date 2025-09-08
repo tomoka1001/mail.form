@@ -13,8 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('/inquiries', 'InquiriesController@index')->name('inquiries.index');
+// お問合せ入力ページ
+Route::get('/inquiries/top', 'InquiriesController@showCreateForm')->name('inquiries.top');
+// 確認ページ
+Route::post('/inquiries/comfilm', 'InquiriesController@comfilm')->name('inquiries.comfilm');
+// 保存
+Route::post('/inquiries/store', 'InquiriesController@store')->name('inquiries.store');
+// 完了ページ
+Route::get('/inquiries/thanks', 'InquiriesController@showThanksForm')->name('inquiries.thanks');

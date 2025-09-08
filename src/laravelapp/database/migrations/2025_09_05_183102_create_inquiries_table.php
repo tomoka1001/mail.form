@@ -17,11 +17,11 @@ class CreateInquiriesTable extends Migration
             $table->bigIncrements('id');
             $table->string('name', 30);
             $table->string('email', 255);
-            $table->integer('sex');
-            $table->integer('category');
-            $table->integer('area');
+            $table->string('sex', 10);
+            $table->string('category', 50);
+            $table->string('area', 10);
             $table->text('message', 300);
-            $table->string('image');
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }
