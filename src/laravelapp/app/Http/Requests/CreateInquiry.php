@@ -25,12 +25,12 @@ class CreateInquiry extends FormRequest
     {
         return [
             'name' => 'required|string|max:30',
-            'email' => 'required|string|email:strict,dns,spoof|max:255',
+            'email' => 'required|string|email:strict,dns|max:255',
             'sex' => 'required|string|max:10',
-            'category' => 'required|string|max:50',
-            'area' => 'required|string|max10',
-            'massege' => 'required|string|max300',
-            'image' => 'string',
+            'category' => 'required',
+            'area' => 'required|string|max:10',
+            'message' => 'required|string|max:300',
+            // 'image' => 'string',
         ];
     }
 
@@ -42,7 +42,8 @@ class CreateInquiry extends FormRequest
             'sex' => '性別',
             'category' => 'お問合せ内容',
             'area' => 'お住まい',
-            'massege' => 'メッセージ',
+            'message' => 'メッセージ',
+            'image' => '画像',
         ];
     }
 }
